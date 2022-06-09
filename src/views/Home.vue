@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-const ws = new WebSocket("ws://10.231.7.28:8000");
+const ws = new WebSocket("ws://192.168.31.123:8000");
 export default {
   data() {
     return {

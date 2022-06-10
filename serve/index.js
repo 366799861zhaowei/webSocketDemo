@@ -19,9 +19,11 @@ const Ws = require("ws");
     }
     function handleClose(){
         console.log("BE  Websocket Close");
+        this.reconnect()
     }
     function handleError(){
         console.log("BE  Websocket Error");
+        this.reconnect()
     }
     function handleConnection(ws){
         console.log("BE  Websocket connection");
